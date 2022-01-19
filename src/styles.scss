@@ -6,6 +6,7 @@ body {
 }
 
 html::-webkit-scrollbar-thumb {
+    z-index: 14;
     background-color: #A8B2D1 !important;
     border: 3px solid #0a192e !important;
     border-radius: 10px !important;
