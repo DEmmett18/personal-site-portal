@@ -1,0 +1,28 @@
+@import '../../../../../styles/core';
+.header-item {
+    padding: 10px;
+    font-family: $font-main;
+    font-weight: 300;
+    font-size: 13px;
+    cursor: pointer;
+    &__index {
+        color: $color-green;
+    }
+    &__description {
+        color: $color-slate;
+        &:hover {
+            animation-name: bringfocus;
+            animation-duration: 750ms;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes bringfocus {
+    from {
+        color: $color-slate;
+    }
+    to {
+        color: $color-green;
+    }
+}

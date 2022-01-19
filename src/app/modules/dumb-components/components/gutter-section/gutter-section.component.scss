@@ -1,0 +1,11 @@
+@import '../../../../../styles/core';
+.line {
+    height: 81px;
+    // border-left: solid 1px $color-slate-light;
+    background-color: $color-slate-light;
+    margin: 10px auto 0;
+    width: 1px;
+}
+.gutter-container {
+    height: fit-content;
+}

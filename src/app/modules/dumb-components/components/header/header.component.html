@@ -1,0 +1,17 @@
+<header class="page-header {{ showHideClass }} {{ sizeClass }}">
+    <nav class="page-nav">
+        <div class="logo">
+            <app-dlogo></app-dlogo>
+        </div>
+        <div class="menu-items">
+            <ol class="section-list">
+                <li *ngFor="let section of sections">
+                    <app-header-item>{{ section.description }}</app-header-item>
+                </li>
+            </ol>
+            <div class="resume">
+                <app-button size="small">Resume</app-button>
+            </div>
+        </div>
+    </nav>
+</header>

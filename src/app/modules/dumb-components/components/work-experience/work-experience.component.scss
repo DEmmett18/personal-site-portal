@@ -1,0 +1,52 @@
+@import '../../../../../styles/core';
+
+.work-experience-container {
+    display: flex;
+}
+.side-panel {
+    position: relative;
+    z-index: 3;
+    width: max-content;
+    padding: 0px;
+    margin: 0px;
+    flex: 1;
+    list-style: none;
+}
+.side-panel-element {
+    height: $work-expierience-tab-height;
+    background-color: transparent;
+    padding: 13px;
+    border: none;
+    border-left: 2px solid $color-navy-light;
+    &:hover {
+        background-color: $color-navy-light; // use animation in future?
+        & > span { color: $color-green; }
+    }
+    &__text {
+        font-family: $font-secondary;
+        color: $color-slate-dark;
+        font-size: 14px;
+        &.active {
+            color: $color-green;
+        }
+    }
+}
+.active-panel {
+    flex: 5.5
+}
+:root {
+    --selected-work-experience-index: 1;
+}
+
+.job-highlighter {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    height: $work-expierience-tab-height;
+    width: 2px;
+    background-color: $color-green;
+    transition: cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+    transform: translateY(calc(var(--selected-work-experience-index) * 42px));
+}
+

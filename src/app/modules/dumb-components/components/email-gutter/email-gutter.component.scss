@@ -1,0 +1,24 @@
+@import '../../../../../styles/core';
+.email {
+    // transform: rotate(90deg) translateX(-86px);
+    writing-mode: vertical-rl;
+    color: $color-slate-light;
+    font-size: 12px;
+    font-family: $font-main;
+    padding-left: 4px;
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+        animation-name: highlightcolor;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }
+}
+@keyframes highlightcolor {
+    from {
+        color: $color-slate-light;
+    } to {
+        color: $color-green;
+        transform: translateY(-3px);
+    }
+}

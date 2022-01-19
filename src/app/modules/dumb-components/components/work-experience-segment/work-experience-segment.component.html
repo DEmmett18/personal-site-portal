@@ -1,0 +1,7 @@
+<h2 class="job-title">{{ job.title }} <strong>@ {{job.company}}</strong></h2>
+<h3 class="job-duration">{{ job | dateDuration }}</h3>
+<ul class="job-bullet-list">
+    <li *ngFor="let bulletPoint of job.bulletPoints">
+        {{ bulletPoint }}
+    </li>
+</ul>

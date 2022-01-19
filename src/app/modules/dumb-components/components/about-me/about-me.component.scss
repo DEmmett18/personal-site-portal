@@ -1,0 +1,16 @@
+@import '../../../../../styles/core';
+.numbered-heading {
+    font-family: $font-secondary;
+    color: $color-slate-light;
+    font-size: 32px;
+}
+.description {
+    width: 58%;
+    &>p {
+        font-family: $font-secondary;
+        color: $color-slate-dark;
+    }
+}
+.about-me-container {
+    display: flex;
+}

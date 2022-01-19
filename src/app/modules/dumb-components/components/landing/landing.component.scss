@@ -1,0 +1,30 @@
+@import '../../../../../styles/core';
+.landing-container {
+    width: fit-content;
+}
+.landing-segment {
+    &-intro {
+        font-size: 16px;
+        font-family: $font-main;
+        color: $color-green;
+        margin: 0 0 30px 4px
+    }
+    &-name {
+        color: $color-slate-light;
+        font-family: $font-secondary;
+        font-size: 80px;
+        margin: 0;
+    }
+    &-role {
+        color: $color-slate;
+        font-family: $font-secondary;
+        font-size: 80px;
+        margin: 0;
+    }
+    &-description {
+        color: $color-slate;
+        font-family: $font-secondary;
+        font-size: 20px;
+        max-width: 540px;
+    }
+}

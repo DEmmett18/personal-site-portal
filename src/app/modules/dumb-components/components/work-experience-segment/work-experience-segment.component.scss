@@ -1,0 +1,17 @@
+@import '../../../../../styles/core';
+
+.job-title {
+    font-family: $font-secondary;
+    color: $color-slate-light;
+    font-size: 22px;
+    &>strong {
+        font-family: inherit;
+        color: $color-green;
+        font-size: inherit;
+    }
+}
+.job-duration {
+    font-family: $font-main;
+    font-size: 13px;
+    color: $color-slate-dark;
+}

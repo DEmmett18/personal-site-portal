@@ -1,0 +1,46 @@
+@import '../../../../../styles/core';
+.loader-container {
+    position: fixed;
+    display: flex;
+    background-color: $color-navy;
+    width: 100vw;
+    height: 100vh;
+}
+.logo-loader-container {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.page-wide-loader {
+    scale: 2;
+    width: fit-content;
+    height: fit-content;
+    animation-name: rotatesvg;
+    animation-duration: 2001ms;
+    animation-iteration-count: infinite;
+    animation-delay: 228ms;
+    margin: auto;
+    height: 35vh;
+    max-width: 80vw;
+}
+@keyframes rotatesvg {
+    from {
+        transform: rotate(0deg);
+    }
+    // 50% {
+    //     transform: rotate(180deg);
+    //     background-color: yellow;
+    // }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-message {
+    font-family: $font-main;
+    color: $color-green;
+    font-size: 30px;
+    // max-width: fit-content;
+    width: 180.3px;
+    margin: 35px auto 0;
+}

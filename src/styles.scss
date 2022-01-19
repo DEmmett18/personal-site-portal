@@ -1,0 +1,87 @@
+
+@import './styles/core';
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #A8B2D1 !important;
+    border: 3px solid #0a192e !important;
+    border-radius: 10px !important;
+}
+
+html::-webkit-scrollbar-track {
+    background: #64ffda !important;
+}
+
+ul {
+    display: grid;
+    // grid-template-columns: repeat(2, minmax(140px, 200px));
+    font-family: $font-secondary;
+    color: $color-slate-dark;
+    // padding-inline-start: 7px;
+}
+ul > li::marker {
+    font-family: $font-main;
+    color: $color-green;
+    font-size: 24px;
+    content: "▹";
+}
+ul > li {
+    padding-left: 20px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    font-family: $font-secondary;
+    color: $color-slate-dark;
+    padding-inline-start: 7px;
+}
+.skills-list > li::marker {
+    font-family: $font-main;
+    color: $color-green;
+    content: "▹"
+}
+.skills-list > li {
+    padding-left: 20px;
+}
+.numbered-heading {
+    display: flex;
+    font-family: $font-secondary;
+    color: $color-slate-light;
+    font-size: 32px;
+    // &::before {
+    //     font-family: $font-main;
+    //     font-size: 26px;
+    //     color: $color-green;
+    //     counter-increment: section 1;
+    //     content: "0" counter(section) ".";
+    // }
+    &::after {
+        content: "";
+        display: block;
+        position: relative;
+        top: -5px;
+        width: 300px;
+        height: 1px;
+        margin-left: 20px;
+        margin-top: 25px;
+        background-color: $color-navy-light;
+    }
+}
+
+strong {
+    color: $color-green;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}

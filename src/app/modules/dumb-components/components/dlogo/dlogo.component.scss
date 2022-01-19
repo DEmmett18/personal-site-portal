@@ -1,0 +1,19 @@
+.d-logo {
+    cursor: pointer;
+    &:hover {
+        & > svg > #fill-path {
+            animation-name: fillicon;
+            animation-duration: 420ms;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes fillicon {
+    from {
+        fill-opacity: 0;
+    }
+    to {
+        fill-opacity: 13.5%;
+    }
+}

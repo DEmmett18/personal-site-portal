@@ -1,0 +1,70 @@
+@import '../styles/variables';
+
+.main-content {
+    background-color: $color-navy;
+    display: block;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    color: $color-slate;
+    padding-top: 100px;
+    // position: absolute;
+}
+
+.app-landing-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $color-navy;
+    min-height: 100vh;
+    align-items: flex-start;
+}
+
+main {
+    margin: 0px auto;
+    background-color: $color-navy;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 0 150px;
+}
+.social-section {
+    position: fixed;
+    bottom: 0px;
+    left: 48px;
+}
+.email-section {
+    position: fixed;
+    bottom: 0px;
+    right: 48px;
+}
+
+
+section {
+    margin-bottom: 100px;
+    &:last-of-type {
+        margin-bottom: 0px !important;
+    }
+
+}
+
+.site-footer {
+    background-color: $color-navy;
+    display: flex;
+    align-content: center;
+}
+.designed-and-built-by {
+    width: fit-content;
+    margin: auto;
+    font-family: $font-main;
+    font-size: 14px;
+    color: $color-slate-dark;
+    margin-bottom: 5px;
+}
+
+
+.brittany-link {
+    color: $color-slate-dark;
+    &:hover {
+        color: $color-green;
+    }
+}

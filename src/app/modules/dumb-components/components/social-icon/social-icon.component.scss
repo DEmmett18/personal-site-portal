@@ -1,0 +1,26 @@
+@import '../../../../../styles/core';
+svg {
+    height: 20px;
+    color: rgb(168, 178, 209);
+}
+.social-link:hover > svg {
+    &:hover {
+        > * {
+            color: $color-green;
+        }
+        animation-name: hovericon;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes hovericon {
+    from {
+        color: rgb(168, 178, 209);
+        transform: translateY(0)
+    }
+    to {
+        transform: translateY(-3px);
+        color: $color-green;
+    }
+}

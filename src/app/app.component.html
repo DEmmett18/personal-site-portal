@@ -1,0 +1,31 @@
+<app-logo-loader *ngIf="appLoading; else app"></app-logo-loader>
+<ng-template #app>
+    <app-header></app-header>
+    <div id="main-body" style="box-sizing: inherit;">
+        <main>
+            <section class="app-landing-section">
+                <app-landing></app-landing>
+            </section>
+            <section>
+                <app-about-me></app-about-me>
+            </section>
+            <section>
+                <app-work-experience></app-work-experience>
+            </section>
+            <section class="contact-me">
+                <app-contact-me></app-contact-me>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="designed-and-built-by">
+                Designed by <a class="brittany-link" href="https://brittanychiang.com/">Brittany Chiang</a>. Developed by Domenic O'Neill.
+            </div>
+        </footer>
+    </div>
+    <div class="social-section">
+        <app-socials></app-socials>
+    </div>
+    <div class="email-section">
+        <app-email-gutter></app-email-gutter>
+    </div>
+</ng-template>
