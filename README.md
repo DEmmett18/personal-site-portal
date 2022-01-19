@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+for publishing make sure you have angular-cli-ghpages package installed as a development dependency and run the following 
+run the following to build: ng build --prod --base-href "https://DEmmett18.github.io/personal-site-portal/"
+run the following to publish: npx angular-cli-ghpages --dir=dist/personal-site-portal

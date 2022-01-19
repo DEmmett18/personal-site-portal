@@ -26,7 +26,6 @@
     animation-name: slideout;
     animation-duration: 600ms;
     animation-fill-mode: forwards;
-    // display: none;
 }
 
 @keyframes slideout {
@@ -36,19 +35,13 @@
     }
     to {
         top: -100px;
-        // display: none;
     }
 }
 @keyframes slidein {
     from {
-        // display: none;
         top: -100px;
     }
-    // 0% {
-    //     display: flex;
-    // }
     to {
-        // display: flex;
         top: 0;
     }
 }
@@ -85,27 +78,8 @@ li::marker {
     margin-right: -10px;
 }
 
-// ol {
-//     word-break: break-all;
-//     margin: 0;
-//     padding: 0;
-//   }
-//   ol ol {
-//       margin-left: 0em;
-//   }
-//   li {
-//     list-style-position: inside;
-//     padding: 0;
-//   }
-//   li::before {
-//     content: "";
-//     width: 0px;
-//     display: inline-block;
-//   }
-
 @for $i from 1 through 4 {
     .section-list:nth-child(#{$i}) {
-        @debug "HEllo #{$i}";
         opacity: 0;
         animation-name: fallin;
         animation-duration: 1000ms;
@@ -121,4 +95,11 @@ li::marker {
     to {
         opacity: 1
     }
+}
+.download-resume-button {
+    color: $color-green;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid $color-green;
+    border-radius: 2px;
 }

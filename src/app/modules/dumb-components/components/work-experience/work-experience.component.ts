@@ -12,62 +12,32 @@ export class WorkExperienceComponent implements OnInit {
             title: 'Senior Full Stack Engineer',
             company: 'Hub Group',
             currentlyEmployed: true,
-            startDate: new Date(),
+            startDate: new Date('2018-12-17'),
             endDate: new Date(),
             bulletPoints: [
-                'Did this',
-                'And that',
-                'And a lot more'
+                "Led an agile team of developers on a high-impact, externally facing application using MEAN stack and microservices.",
+                "Developed and maintained a robust Angular component library, resulting in a 40% reduction in development overhead on front-end work, and a consistent look and feel across all externally facing applications.",
+                "Mentored several junior developers and interns, helping to breed passion for their role and grow their knowledge.",
+                "Designed and implemented an expedited payment system to offer as a premium option to end users resulting in $2 million in company savings, and counting.",
+                "Led and coordinated frequent production deployments with dependencies on various teams.",
+                "Analyzed and refactored MongoDB collection schemas to optimize for read and write performance.",
+                "Collaborated with designers, SMEs and power users to design and develop end to end solutions which address complex ","use-cases.",
+                "Led the team through stressful production defects by performing swift RCA and brainstorming solutions",
+                "Received multiple promotions, entering at a Junior-level being promoted twice, once to regular and once to Senior"
             ]
         },
         {
-            title: 'Senior Full Stack Engineer',
-            company: 'Hub Group',
-            currentlyEmployed: true,
-            startDate: new Date(),
-            endDate: new Date(),
+            title: 'Application Architect',
+            company: 'Guide Dog',
+            currentlyEmployed: false,
+            startDate: new Date('2016-09-11'),
+            endDate: new Date('2017-05-20'),
             bulletPoints: [
-                'Did this',
-                'And that',
-                'And a lot more'
+                'Worked with one other developer and a product owner to design a mobile application to help blind students navigate the various facilities available to the students at butler',
+                'Designed several MongoDB Schemas that would allow for performant read/write speeds.',
+                'Researched and determined a stack that would provide cross platform mobile app support using C# .NET and xamarin.'
             ]
-        },
-        {
-            title: 'Senior Full Stack Engineer',
-            company: 'Hub Group',
-            currentlyEmployed: true,
-            startDate: new Date(),
-            endDate: null,
-            bulletPoints: [
-                'Did this',
-                'And that',
-                'And a lot more'
-            ]
-        },
-        {
-            title: 'Senior Full Stack Engineer',
-            company: 'Hub Group',
-            currentlyEmployed: true,
-            startDate: new Date(),
-            endDate: null,
-            bulletPoints: [
-                'Did this',
-                'And that',
-                'And a lot more'
-            ]
-        },
-        {
-            title: 'Senior Full Stack Engineer',
-            company: 'Hub Group',
-            currentlyEmployed: true,
-            startDate: new Date(),
-            endDate: null,
-            bulletPoints: [
-                'Did this',
-                'And that',
-                'And a lot more'
-            ]
-        },
+        }
     ];
     activeJobIndex = 0;
     workExperienceTabHeight = 42;
@@ -79,10 +49,6 @@ export class WorkExperienceComponent implements OnInit {
       this.activeJobIndex = index;
       let elem = document.getElementById('job-highlighter');
         elem?.style.setProperty('--selected-work-experience-index', `${this.activeJobIndex}`);
-    //   document.documentElement.style.setProperty('--selected-work-experience-index', `${this.activeJobIndex + 1}`);
       return;
   }
-//   public getTransformStyle(): string {
-//       return `transform: translateY(calc(${ this.activeJobIndex } * ${ this.workExperienceTabHeight }px))`;
-//   }
 }

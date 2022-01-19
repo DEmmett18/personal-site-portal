@@ -1,16 +1,35 @@
 @import '../../../../../styles/core';
 svg {
     height: 20px;
+    width: 20px;
     color: rgb(168, 178, 209);
 }
-.social-link:hover > svg {
-    &:hover {
-        > * {
-            color: $color-green;
-        }
-        animation-name: hovericon;
+.social-link:hover {
+    &> svg {
+       &:hover {
+           > * {
+               color: $color-green;
+           }
+           animation-name: hovericon;
+           animation-duration: 300ms;
+           animation-fill-mode: forwards;
+       }
+   }
+   & > svg > #git-path {
+        animation-name: fillpath;
         animation-duration: 300ms;
         animation-fill-mode: forwards;
+   }
+}
+#git-path {
+    fill:rgb(168, 178, 209);
+}
+@keyframes fillpath {
+    from {
+        fill: rgb(168, 178, 209);
+    }
+    to {
+        fill: $color-green;
     }
 }
 

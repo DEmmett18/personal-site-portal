@@ -85,3 +85,28 @@ body {
     height: 100%;
     overflow: auto;
 }
+.anchor-button {
+    color: $color-green;
+    background-color: transparent;
+    border: 1px solid $color-green;
+    border-radius: 4px;
+    font-family: $font-main;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    &:hover {
+        animation-name: bringfocusbutton;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes bringfocusbutton {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: rgba(100, 255, 218, 0.1);
+    }
+}

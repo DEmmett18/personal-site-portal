@@ -8,4 +8,6 @@
 }
 .gutter-container {
     height: fit-content;
+    display: flex;
+    flex-direction: column;
 }

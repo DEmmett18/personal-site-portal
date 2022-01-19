@@ -4,6 +4,7 @@ export const NavBarHeight = 100;
 export interface Section {
     description: string;
     href: string;
+    id: string;
     active: boolean;
 }
 
@@ -23,16 +24,19 @@ export class HeaderComponent implements OnInit {
         {
             description: 'About',
             href: '/#about',
+            id: 'about-me-section',
             active: false
         },
         {
             description: 'Experience',
             href: '/#experience',
+            id: 'work-experience-section',
             active: false
         },
         {
             description: 'Contact',
             href: '/#contact',
+            id: 'contact-me-section',
             active: false
         }
     ]
@@ -47,13 +51,12 @@ export class HeaderComponent implements OnInit {
       if (bodies && bodies.length > 0) {
           let body = bodies.item(0);
           body?.addEventListener('scroll', (event) =>{
-            let scrollingUp = document.body.scrollTop < this.previousWindowTop;
+            let scrollingUp = document.body.scrollTop < this.previousWindowTop; // todo: refactor below logic to make it more intuitive and easy to read
             if (scrollingUp) {
                 this.showHideClass = 'showing';
             } if (!scrollingUp && document.body.scrollTop > 100) {
                 this.showHideClass = 'hiding';
             }
-            // }
             if (document.body.scrollTop < 30 && this.sizeClass === 'header-compact') {
                 this.sizeClass = 'header-full';
             } else if (document.body.scrollTop > 100 && this.sizeClass === 'header-full') {
@@ -63,6 +66,12 @@ export class HeaderComponent implements OnInit {
           })
       }
 
-  }
+      
+    }
+    focusSection(section: any) {
+        let element = document.getElementById(section.id);
+        console.log('FOCUS ELEMENT IS', element);
+        console.log(JSON.stringify(element));
+    }
 
 }

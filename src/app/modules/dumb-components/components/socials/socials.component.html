@@ -1,5 +1,5 @@
 <div class="socials-container">
     <app-gutter-section>
-        <app-social-icon></app-social-icon>
+        <app-social-icon *ngFor="let social of socials" [social]="social"></app-social-icon>
     </app-gutter-section>
 </div>

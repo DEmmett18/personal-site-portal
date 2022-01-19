@@ -2,4 +2,9 @@
 
 .socials-container {
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+app-social-icon:first-of-type {
+    padding-bottom: 12px;
 }
