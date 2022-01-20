@@ -1,24 +1,20 @@
-
-
-<div class="header-wrapper">
-
-    <header class="page-header {{ showHideClass }} {{ sizeClass }}">
-        <nav class="page-nav">
-            <div class="logo">
-                <app-dlogo></app-dlogo>
+<div class="header-wrapper"></div>
+<header class="page-header {{ showHideClass }} {{ sizeClass }}">
+    <nav class="page-nav">
+        <div class="logo">
+            <app-dlogo></app-dlogo>
+        </div>
+        <div class="menu-items">
+            <ol class="section-list">
+                <li *ngFor="let section of sections" (click)="focusSection(section)">
+                    <app-header-item>{{ section.description }}</app-header-item>
+                </li>
+            </ol>
+            <div class="resume">
+                <a class="anchor-button"
+                    download="RESUME_DOMENIC_ONEILL" href="assets/RESUME_DOMENIC_ONEILL.pdf"> Resume </a>
+                <!-- <app-button size="small">Resume</app-button> -->
             </div>
-            <div class="menu-items">
-                <ol class="section-list">
-                    <li *ngFor="let section of sections" (click)="focusSection(section)">
-                        <app-header-item>{{ section.description }}</app-header-item>
-                    </li>
-                </ol>
-                <div class="resume">
-                    <a class="anchor-button"
-                        download="filename" href="assets/RESUME_DOMENIC_ONEILL.pdf"> Resume </a>
-                    <!-- <app-button size="small">Resume</app-button> -->
-                </div>
-            </div>
-        </nav>
-    </header>
-</div>
+        </div>
+    </nav>
+</header>
