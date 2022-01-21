@@ -1,4 +1,4 @@
-import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 export const NavBarHeight = 100;
 export interface Section {
@@ -40,10 +40,6 @@ export class HeaderComponent implements OnInit {
             active: false
         }
     ]
-    @HostListener('document:scroll', ['$event'])
-    onScroll(event: any) {
-        
-    }
   constructor() { }
 
   ngOnInit(): void {
@@ -70,8 +66,9 @@ export class HeaderComponent implements OnInit {
     }
     focusSection(section: any) {
         let element = document.getElementById(section.id);
-        console.log('FOCUS ELEMENT IS', element);
-        console.log(JSON.stringify(element));
+        if (element) {
+            element.scrollIntoView({ block: 'center', behavior: 'smooth' });
+        }
     }
 
 }

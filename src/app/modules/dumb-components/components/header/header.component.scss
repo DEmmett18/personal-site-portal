@@ -78,15 +78,15 @@ li::marker {
     margin-right: -10px;
 }
 
-@for $i from 1 through 4 {
-    .section-list:nth-child(#{$i}) {
-        opacity: 0;
-        animation-name: fallin;
-        animation-duration: 1000ms;
-        animation-fill-mode: forwards;
-        animation-delay: calc(#{$i} * 1600ms);
-    }
-}
+// @for $i from 1 through 4 {
+//     .section-list:nth-child(#{$i}) {
+//         // opacity: 0;
+//         // animation-name: fallin;
+//         // animation-duration: 1000ms;
+//         // animation-fill-mode: forwards;
+//         // animation-delay: calc(#{$i} * 1600ms);
+//     }
+// }
 
 @keyframes fallin {
     from {
