@@ -15,6 +15,7 @@ import { WorkExperienceSegmentComponent } from './components/work-experience-seg
 import { DateDurationPipe } from './pipes/date-duration.pipe';
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { MobileMessageComponent } from './components/mobile-message/mobile-message.component';
 
 
 
@@ -34,7 +35,8 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
     WorkExperienceSegmentComponent,
     DateDurationPipe,
     WorkExperienceComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    MobileMessageComponent
   ],
   imports: [
     CommonModule
@@ -49,7 +51,8 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
       AboutMeComponent,
       WorkExperienceSegmentComponent, // Remove this
       WorkExperienceComponent,
-      ContactMeComponent
+      ContactMeComponent,
+      MobileMessageComponent
   ]
 })
 export class DumbComponentsModule { }

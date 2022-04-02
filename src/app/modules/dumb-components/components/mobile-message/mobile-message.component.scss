@@ -1,0 +1,41 @@
+@import '../../../../../styles/core';
+
+.main {
+    background-color: $color-navy;
+    height: 100vh;
+    position: absolute;
+    padding-top: calc(38vh - 250px);
+    overflow: auto;
+    width: 100vw;
+}
+#cone-icon {
+    width: 30vw;
+    margin: auto;
+    display: block;
+    margin-top: 10vh;
+}
+
+.mobile-message-header {
+    font-family: $font-main;
+    color: $color-green;
+    margin: 0 auto;
+    width: fit-content;
+    padding-top: 35px; 
+}
+
+.mobile-message-disclaimer {
+    font-family: $font-secondary;
+    margin: 0 8vw;
+    color: $color-slate-light;
+    font-weight: 300;
+    padding-top: 26px;
+}
+
+.actions-container {
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    width: 377px;
+    margin: auto;
+    padding-bottom: 20px;
+}
