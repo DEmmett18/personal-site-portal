@@ -70,5 +70,8 @@ export class HeaderComponent implements OnInit {
             element.scrollIntoView({ block: 'center', behavior: 'smooth' });
         }
     }
+    openResume() {
+        window.open('https://drive.google.com/file/d/1r4LA0IbYH_Ti2RAvxG8lLmCjCm5QX-W8/view?usp=sharing');
+    }
 
 }
